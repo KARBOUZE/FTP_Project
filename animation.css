@@ -1,0 +1,71 @@
+
+.anim {
+    position: absolute;
+    top:40vh;
+    left:50vw;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+     animation-name: square;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    /* animation-timing-function: linear; */
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+    /* animation-fill-mode: both;  */
+    /* animation: square 2s linear 2s infinite reverse both;  */
+
+}
+
+.anim:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes square {
+    /* 0% {
+        background-color: gray;
+        transform: translate(0, 0);
+    }
+
+    50% {
+        background-color: yellow;
+        transform: translate(80vw, 80vh);
+    }
+
+    60% {
+        background-color: yellow;
+        transform: translate(80vw, 80vh);
+    }
+
+    70% {
+        background-color: yellow;
+        transform: translate(80vw, 80vh);
+    }
+
+    100% {
+        background-color: gray;
+        transform: translate(0, 0);
+    } */
+
+    25% {
+        background-color: yellow;
+        transform: translate(0, 100px) rotate(180deg);
+    }
+
+    50% {
+        background-color: green;
+        transform: translate(0, 0) rotate(270deg);
+    }
+
+    75% {
+        background-color: white;
+        transform: translate(0, 100px) rotate(360deg);
+    } 
+
+    100% {
+        background-color: blue;
+        transform: translate(0, 0) rotate(360deg);
+    }
+}

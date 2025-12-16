@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Powerful Tools, Simple Pricing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Liens Bootstrap -->
+    <link rel="stylesheet" href="../bootstrapCss/bootstrap.min.css">
+    <link rel="stylesheet" href="../filesCss/animation.css">
+
+    <style>
+        /* body{
+            background-image: url("../images/logo1.jpg");
+            background-repeat: no-repeat;
+        } */
+        /* MENU NAV */
+        nav {
+            background-color: #e3f2fd;
+        }
+
+        nav a {
+            color: #000 !important;
+        }
+
+        nav a:hover {
+            color: #000;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Élément actif */
+        nav .active {
+            color: #000 !important;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* TITRES */
+        h1 {
+            text-align: center;
+            margin-top: 24px;
+            color: #333;
+        }
+
+        .sous-titre {
+            text-align: center;
+            color: #212529bf;
+            margin-bottom: 3rem;
+        }
+
+        /* CARTES OFFRES */
+        .offre {
+            box-shadow: 0 0.125rem 0.25rem #00000013;
+            border: 1px solid #0000002d;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .card-header {
+            background: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            border-radius: 10px 10px 0 0 !important;
+            padding: 12px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .text-gris {
+            color: #6c757d;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #78baea;
+            color: #333;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .dflex {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .cartes {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .img-fluid {
+            width: 100%;
+            height: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="../images/arr_bannp.png" class="img-fluid" alt="...">
+    <div class="dflex">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Caractéristiques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entreprise</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Support</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Tarification</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <!-- TITRE -->
+            <h1>Nos Offres</h1>
+            <p class="sous-titre">
+                Choisissez le plan qui correspond le mieux à votre activité. Profitez d’outils puissants,
+                d’un stockage sécurisé et d’une assistance disponible à tout moment.
+            </p>
+
+            <!-- CARTES -->
+            <section class="cartes">
+
+                <!-- Gratuit -->
+                <article class="offre text-center">
+                    <div class="card-header">
+                        Gratuit
+                    </div>
+                    <div class="card-body">
+                        <h2>0 $<small class="text-gris"> / mois</small>
+                        </h2>
+                        <p>
+                            10 utilisateurs inclus<br>
+                            2 Go de stockage<br>
+                            Assistance par e-mail<br>
+                            <a href="#">Accès au centre d'aide</a>
+                        </p>
+                        <button type="button" class="btn btn-outline-primary w-100">Inscription gratuite</button>
+                    </div>
+                </article>
+
+                <!-- Pro -->
+                <article class="offre text-center">
+                    <div class="card-header">
+                        Pro
+                    </div>
+                    <div class="card-body">
+                        <h2>15 $<small class="text-gris"> / mois</small>
+                        </h2>
+                        <p>20 utilisateurs inclus<br>10 Go de stockage<br>Assistance par e-mail prioritaire<br>
+                            <a href="#">Accès au centre d’aide</a>
+                        </p>
+                        <button class="btn btn-primary">Commencer</button>
+                    </div>
+                </article>
+
+                <!-- Entreprise -->
+                <article class="offre text-center">
+                    <div class="card-header">
+                        Entreprise
+                    </div>
+                    <div class="card-body">
+                        <h2>29 $<small class="text-gris"> / mois</small>
+                        </h2>
+                        <p>30 utilisateurs inclus<br>15 Go de stockage<br>Assistance par téléphone et e-mail<br>
+                            <a href="#">Accès au centre d’aide</a>
+                        </p>
+                        <button class="btn btn-primary">Contactez-nous</button>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            © 2025 MonEntreprise. Tous droits réservés.
+        </footer>
+    </div>
+    <div class="anim"></div>
+    <!-- Script Bootstrap -->
+    <script src="../boostrapJS/bootstrap.min.js"></script>
+
+</body>
+
+</html>
